@@ -1,11 +1,11 @@
-public class Thread extends java.lang.Thread {
+public class MinhaThread extends Thread {
 
     private final int      id;
     private final int      totalThreads;
     private final long     senhaLong;
     private final String[] resultado;
 
-    public Thread(int id, int totalThreads, String senha, String[] resultado) {
+    public MinhaThread(int id, int totalThreads, String senha, String[] resultado) {
         this.id           = id;
         this.totalThreads = totalThreads;
         this.senhaLong    = Long.parseLong(senha);

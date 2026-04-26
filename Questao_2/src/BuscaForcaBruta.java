@@ -6,11 +6,11 @@ public class BuscaForcaBruta {
         String   senha = "8762536477";
         String[] resultado    = new String[2];
 
-        Thread[] buscador = new Thread[totalThreads];
+        MinhaThread[] buscador = new MinhaThread[totalThreads];
         for (int i = 0; i < totalThreads; i++) {
-            buscador[i] = new Thread(i, totalThreads, senha, resultado);
+            buscador[i] = new MinhaThread(i, totalThreads, senha, resultado);
         }
-        for (Thread b : buscador) b.start();
+        for (MinhaThread b : buscador) b.start();
 
         //new Thread(0, totalThreads, senha, resultado).start();
 
